@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kataloga – Gizlilik Politikası</title>
+<meta name="description" content="Kataloga uygulaması gizlilik politikası">
+<style>
+:root{--bg:#f7f8fb;--card:#fff;--fg:#1c2230;--muted:#5d6678;--accent:#4f46e5;--border:#e4e7ee}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1218;--card:#171b24;--fg:#e8ebf2;--muted:#9aa3b5;--accent:#8b8cff;--border:#262c39}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+header.top{max-width:820px;margin:0 auto;padding:20px 20px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+header.top a.brand{font-weight:700;font-size:1.15rem;text-decoration:none;color:var(--fg)}
+header.top nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-size:.95rem}
+header.top nav a:hover{color:var(--accent)}
+main{max-width:820px;margin:16px auto 40px;padding:8px 20px}
+article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 28px 20px}
+h1{font-size:1.9rem;line-height:1.25;margin:0 0 .4em}
+h2{font-size:1.25rem;margin:1.8em 0 .5em;padding-top:.2em}
+p,li{color:var(--fg)}
+ul{padding-left:1.3em}
+li{margin:.25em 0}
+.table-wrap{overflow-x:auto;margin:1em 0}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:520px}
+th,td{border:1px solid var(--border);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--bg)}
+footer{max-width:820px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:.88rem;text-align:center}
+.hero{text-align:center;padding:36px 20px 12px}
+.hero h1{font-size:2.3rem;margin-bottom:.2em}
+.hero p{color:var(--muted);max-width:520px;margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}
+.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;text-decoration:none;color:var(--fg);transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.card h2{margin:0 0 .3em;font-size:1.15rem}
+.card p{margin:0;color:var(--muted);font-size:.93rem}
+@media(max-width:560px){article{padding:20px 16px 12px;border-radius:12px}h1{font-size:1.55rem}.hero h1{font-size:1.8rem}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">Kataloga</a>
+  <nav><a href="privacy.html">Gizlilik Politikası</a><a href="terms.html">Kullanım Koşulları</a></nav>
+</header>
+<main>
+<article>
+<h1>Kataloga Gizlilik Politikası</h1>
+<p>Son güncelleme: 31 Ekim 2026</p>
+<p>Bu Gizlilik Politikası, Kataloga mobil uygulamasını ("Uygulama") sunan Mustafa Cihan Yılmaz ("Biz", "Geliştirici") tarafından hazırlanmıştır. Uygulama, yüklediğiniz ürün fotoğraflarından yapay zeka yardımıyla ikinci el ilan başlığı, açıklaması ve fiyat önerisi üretir.</p>
+<p>İletişim: <a href="mailto:mustafacihanyilmaz@gmail.com">mustafacihanyilmaz@gmail.com</a></p>
+<p>Uygulamayı kullanarak bu politikada açıklanan veri işleme faaliyetlerini kabul etmiş olursunuz. Kabul etmiyorsanız Uygulamayı kullanmayınız.</p>
+<h2>1. Hangi verileri işliyoruz?</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Neden</th>
+<th>Nerede / Kimde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ürün fotoğrafları</strong> (en fazla 3 adet) ve yazdığınız notlar</td>
+<td>İlan başlığı, açıklaması ve fiyat önerisi üretmek</td>
+<td>İlan üretimi sırasında yapay zeka sağlayıcısına anlık iletilir; sunucularımızda <strong>kalıcı olarak saklanmaz</strong></td>
+</tr>
+<tr>
+<td><strong>Üretilen ilan metinleri</strong> (başlık, açıklama, fiyat önerisi)</td>
+<td>İlan geçmişinizi cihazlar arasında korumak</td>
+<td>Hesabınıza bağlı olarak Supabase veritabanında</td>
+</tr>
+<tr>
+<td><strong>E-posta adresi</strong></td>
+<td>E-posta ile giriş yaptıysanız hesabınızı doğrulamak ve oturum açmanızı sağlamak</td>
+<td>Supabase Auth</td>
+</tr>
+<tr>
+<td><strong>Google hesabı bilgisi</strong> (Google kimliği, e-posta adresi)</td>
+<td>"Google ile giriş" seçeneğini kullandıysanız oturum açmak</td>
+<td>Google, Supabase Auth</td>
+</tr>
+<tr>
+<td><strong>Misafir kimliği</strong></td>
+<td>Hesap açmadan Uygulamayı kullanıyorsanız hakkınızı ve geçmişinizi size bağlamak</td>
+<td>Supabase Auth</td>
+</tr>
+<tr>
+<td><strong>Hak (kredi) bakiyesi, Pro geçerlilik tarihi</strong></td>
+<td>Kalan ilan haklarınızı ve Haftalık Pro süreniz takip etmek</td>
+<td>Supabase</td>
+</tr>
+<tr>
+<td><strong>Satın alma kayıtları</strong> (işlem kimliği, ürün kodu, platform)</td>
+<td>Satın aldığınız hakkı vermek ve aynı makbuzun tekrar kullanılmasını engellemek</td>
+<td>Supabase; doğrulama Google Play / App Store üzerinden</td>
+</tr>
+<tr>
+<td><strong>Ödüllü reklam kayıtları</strong> (reklam işlem kimliği, tarih)</td>
+<td>Reklam karşılığı hak vermek ve günlük sınırı uygulamak</td>
+<td>Supabase, Google AdMob</td>
+</tr>
+<tr>
+<td><strong>Cihaz tanımlayıcısı</strong> (Uygulamaya özel rastgele kimlik)</td>
+<td>Kötüye kullanımı ve otomatik istekleri önlemek</td>
+<td>Supabase / sunucu fonksiyonları</td>
+</tr>
+<tr>
+<td><strong>Reklam kimliği ve cihaz/ağ verileri</strong></td>
+<td>Ödüllü reklam göstermek, reklam performansını ölçmek</td>
+<td>Google AdMob</td>
+</tr>
+<tr>
+<td><strong>İçerik bildirimleri</strong></td>
+<td>Uygunsuz veya yanıltıcı yapay zeka çıktısını incelemek</td>
+<td>Supabase</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ödeme kartı veya fatura bilgilerinize erişmeyiz; ödemeler Google Play ve Apple App Store tarafından işlenir.</p>
+<p>Konum, rehber, mikrofon gibi verileri toplamayız. Fotoğraflarınıza yalnızca siz seçtiğinizde erişilir.</p>
+<h2>2. Yapay zeka işleme (OpenAI) ve diğer üçüncü taraflar</h2>
+<ul>
+<li><strong>OpenAI.</strong> İlan oluşturmak için seçtiğiniz fotoğraflar ve notlarınız OpenAI API'sine gönderilir. Fotoğraflar yalnızca ilan üretimi süresince iletilir ve <strong>sunucularımızda kalıcı olarak saklanmaz</strong>; yalnızca üretilen metin sonucu hesabınıza kaydedilir. OpenAI verileri kendi gizlilik koşullarına ve API veri politikalarına göre işler.</li>
+<li><strong>Arama sağlayıcıları (Tavily / Serper).</strong> Benzer ürünlerin güncel piyasa fiyatını araştırmak için fotoğraftan tespit edilen ürün adı gibi <strong>metinsel bilgiler</strong> arama hizmetine gönderilir. Fotoğraflarınız bu hizmetlere gönderilmez.</li>
+<li><strong>Supabase.</strong> Veritabanı, kimlik doğrulama ve sunucu fonksiyonları için kullanılır.</li>
+<li><strong>Google.</strong> AdMob (reklam), Google ile giriş ve Google Play Faturalama.</li>
+<li><strong>Apple.</strong> App Store ve StoreKit (satın alma işlemleri).</li>
+</ul>
+<p>İlk ilanınızı oluşturmadan önce Uygulama, fotoğraflarınızın yapay zeka hizmetiyle paylaşılması için sizden <strong>açık izin</strong> ister. İzin vermezseniz ilan üretimi yapılamaz.</p>
+<p>Kişisel verilerinizi satmayız.</p>
+<h2>3. Reklamlar ve Google AdMob</h2>
+<p>Uygulama, ücretsiz ilan hakkı kazanmanız için Google AdMob aracılığıyla <strong>ödüllü reklamlar</strong> gösterir. AdMob bu amaçla cihazınızın reklam kimliği (Android'de Reklam Kimliği / iOS'ta IDFA), IP adresi, cihaz ve uygulama bilgileri gibi verileri toplayabilir ve çerez benzeri tanımlayıcılar kullanabilir. Bu veriler reklam gösterimi, ölçümü, dolandırıcılığın önlenmesi ve (izin verdiyseniz) kişiselleştirme için kullanılır.</p>
+<ul>
+<li><strong>iOS:</strong> Takip izni isteği (App Tracking Transparency) ekranında izin vermezseniz reklam kimliğiniz kullanılmaz; kişiselleştirilmemiş reklamlar gösterilir.</li>
+<li><strong>Android:</strong> Cihaz ayarlarından reklam kimliğinizi sıfırlayabilir veya reklam kişiselleştirmesini kapatabilirsiniz.</li>
+<li>Google'ın veri kullanımı hakkında bilgi: <a href="https://policies.google.com/technologies/partner-sites">Google'ın iş ortaklarının verilerini kullanma biçimi</a>.</li>
+</ul>
+<p>Reklam izlemesi tamamlandığında Google, ödül doğrulamasını sunucularımıza bildirir; bu doğrulama yalnızca işlem kimliği ve hesap kimliğinizi içerir.</p>
+<h2>4. Verilerin saklanma süresi</h2>
+<ul>
+<li>İlan geçmişiniz, hak bakiyeniz ve ödüllü reklam kayıtlarınız hesabınız açık olduğu sürece saklanır.</li>
+<li>Yüklediğiniz fotoğraflar sunucularımızda kalıcı olarak saklanmaz.</li>
+<li>Hesabınızı sildiğinizde ilanlarınız, hak bakiyeniz, reklam kayıtlarınız ve hesap kimliğiniz <strong>kalıcı olarak silinir</strong>.</li>
+<li>Çifte ödemeyi ve makbuz tekrarını önlemek için satın alma işlem kimliği ve ürün kodu, <strong>size bağlı olmayacak şekilde</strong> (hesap bağlantısı kaldırılarak) saklanmaya devam edebilir.</li>
+<li>İçerik bildirimleri, hesabınız silindiğinde hesabınızla bağlantısı kaldırılarak inceleme amacıyla tutulabilir.</li>
+<li>Yasal yükümlülükler gerektirdiğinde ilgili kayıtlar yasal süre boyunca saklanır.</li>
+</ul>
+<h2>5. Hesap ve verilerinizi silme</h2>
+<p>Hesabınızı ve verilerinizi uygulama içinden anında ve kalıcı olarak silebilirsiniz:</p>
+<p><strong>Hesabım → Hesabımı Sil</strong></p>
+<p>Bu işlem geri alınamaz; ilan geçmişiniz ve kalan hak/Pro süreniz silinir. Satın alınmış ve kullanılmamış haklar silme sonrası geri yüklenmez.</p>
+<p>Uygulamaya erişemiyorsanız <a href="mailto:mustafacihanyilmaz@gmail.com">mustafacihanyilmaz@gmail.com</a> adresine yazarak silme talebinde bulunabilirsiniz; talebiniz en geç 30 gün içinde sonuçlandırılır.</p>
+<h2>6. Haklarınız (KVKK madde 11 ve GDPR)</h2>
+<p>Kişisel verilerinizle ilgili olarak şu haklara sahipsiniz: verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltme, silme/yok etme, işlenmesine itiraz etme, veri taşınabilirliği ve rızanızı geri çekme. Başvurularınızı <a href="mailto:mustafacihanyilmaz@gmail.com">mustafacihanyilmaz@gmail.com</a> adresine iletebilirsiniz. Şikâyet hakkınız saklıdır: Türkiye'de Kişisel Verileri Koruma Kurumu, AB/AEA'da yerel veri koruma otoriteniz.</p>
+<p>İşleme hukuki sebepleri: sözleşmenin ifası (hizmeti sunmak), meşru menfaat (güvenlik ve kötüye kullanımın önlenmesi), açık rıza (yapay zeka işleme, kişiselleştirilmiş reklam) ve hukuki yükümlülük.</p>
+<h2>7. Güvenlik ve veri aktarımı</h2>
+<p>Veriler aktarım sırasında şifreli (HTTPS) iletilir. Veritabanı satır düzeyinde erişim kuralları kullanır; bir kullanıcı yalnızca kendi kayıtlarına erişebilir. Hak bakiyesi gibi kritik değerler yalnızca sunucu tarafında değiştirilebilir. Hiçbir sistem tamamen güvenli değildir. Hizmet sağlayıcılarımız Türkiye dışında bulunabilir; bu nedenle verileriniz yurt dışına aktarılabilir.</p>
+<h2>8. Çocuklar</h2>
+<p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek bu yaştaki çocuklardan veri toplamayız. Böyle bir durumu fark ederseniz <a href="mailto:mustafacihanyilmaz@gmail.com">mustafacihanyilmaz@gmail.com</a> adresine bildirin; ilgili veriler silinecektir.</p>
+<h2>9. Yapay zeka içeriği hakkında bildirim</h2>
+<p>İlan metinleri ve fiyat önerileri yapay zeka tarafından üretilir ve hatalı olabilir. Uygunsuz veya yanıltıcı çıktıları sonuç ekranındaki bildirim özelliğiyle bize iletebilirsiniz.</p>
+<h2>10. Değişiklikler</h2>
+<p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikleri Uygulama içinde veya bu sayfada duyurur, "Son güncelleme" tarihini değiştiririz. Değişiklikten sonra Uygulamayı kullanmaya devam etmeniz güncel politikayı kabul ettiğiniz anlamına gelir.</p>
+<h2>11. İletişim</h2>
+<p>Gizlilik ile ilgili tüm sorularınız için: <a href="mailto:mustafacihanyilmaz@gmail.com">mustafacihanyilmaz@gmail.com</a></p>
+</article>
+</main>
+<footer>© Kataloga · Son güncelleme: 31 Ekim 2026 · <a href="mailto:mustafacihanyilmaz@gmail.com">mustafacihanyilmaz@gmail.com</a></footer>
+</body>
+</html>
