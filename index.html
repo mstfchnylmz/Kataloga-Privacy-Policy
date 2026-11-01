@@ -1,59 +1,66 @@
 <!doctype html>
-<html lang="tr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kataloga – Yasal Bilgiler</title>
-<meta name="description" content="Kataloga gizlilik politikası ve kullanım koşulları">
-<style>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kataloga – Legal Information</title><meta name="description" content="Kataloga privacy policy and terms of use"><style>
 :root{--bg:#f7f8fb;--card:#fff;--fg:#1c2230;--muted:#5d6678;--accent:#4f46e5;--border:#e4e7ee}
 @media(prefers-color-scheme:dark){:root{--bg:#0f1218;--card:#171b24;--fg:#e8ebf2;--muted:#9aa3b5;--accent:#8b8cff;--border:#262c39}}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-a{color:var(--accent)}
-header.top{max-width:820px;margin:0 auto;padding:20px 20px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-header.top a.brand{font-weight:700;font-size:1.15rem;text-decoration:none;color:var(--fg)}
-header.top nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-size:.95rem}
-header.top nav a:hover{color:var(--accent)}
-main{max-width:820px;margin:16px auto 40px;padding:8px 20px}
-article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 28px 20px}
-h1{font-size:1.9rem;line-height:1.25;margin:0 0 .4em}
-h2{font-size:1.25rem;margin:1.8em 0 .5em;padding-top:.2em}
-p,li{color:var(--fg)}
-ul{padding-left:1.3em}
-li{margin:.25em 0}
-.table-wrap{overflow-x:auto;margin:1em 0}
-table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:520px}
-th,td{border:1px solid var(--border);padding:9px 11px;text-align:left;vertical-align:top}
-th{background:var(--bg)}
-footer{max-width:820px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:.88rem;text-align:center}
-.hero{text-align:center;padding:36px 20px 12px}
-.hero h1{font-size:2.3rem;margin-bottom:.2em}
-.hero p{color:var(--muted);max-width:520px;margin:0 auto}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}
-.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;text-decoration:none;color:var(--fg);transition:transform .15s,border-color .15s}
-.card:hover{transform:translateY(-2px);border-color:var(--accent)}
-.card h2{margin:0 0 .3em;font-size:1.15rem}
-.card p{margin:0;color:var(--muted);font-size:.93rem}
-@media(max-width:560px){article{padding:20px 16px 12px;border-radius:12px}h1{font-size:1.55rem}.hero h1{font-size:1.8rem}}
-</style>
-</head>
-<body>
-<header class="top">
-  <a class="brand" href="index.html">Kataloga</a>
-  <nav><a href="privacy.html">Gizlilik Politikası</a><a href="terms.html">Kullanım Koşulları</a></nav>
-</header>
-<main>
-<section class="hero">
-  <h1>Kataloga</h1>
-  <p>Ürün fotoğrafından yapay zeka ile saniyeler içinde ikinci el ilan metni ve fiyat önerisi.</p>
-</section>
-<div class="cards">
-  <a class="card" href="privacy.html"><h2>Gizlilik Politikası</h2><p>Hangi verileri işliyoruz, yapay zeka ve reklam hizmetleri, hesabınızı silme hakkınız.</p></a>
-  <a class="card" href="terms.html"><h2>Kullanım Koşulları</h2><p>İlan hakları, reklam limitleri, Haftalık Pro kuralları ve kullanıcı sorumlulukları.</p></a>
-</div>
-</main>
-<footer>© Kataloga · Son güncelleme: 1 Kasım 2026 · <a href="mailto:mustafacihanyilmaz@gmail.com">mustafacihanyilmaz@gmail.com</a></footer>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}a{color:var(--accent)}
+header.top{max-width:820px;margin:0 auto;padding:20px 20px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}header.top a.brand{font-weight:700;font-size:1.15rem;text-decoration:none;color:var(--fg)}header.top nav{display:flex;align-items:center;gap:16px;flex-wrap:wrap}header.top nav a{color:var(--muted);font-size:.95rem;text-decoration:none}header.top nav a:hover{color:var(--accent)}
+.language-switcher{display:flex;gap:4px}.language-switcher button{border:1px solid var(--border);border-radius:7px;background:var(--card);color:var(--muted);cursor:pointer;font:inherit;font-size:.83rem;padding:4px 8px}.language-switcher button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+main{max-width:820px;margin:16px auto 40px;padding:8px 20px}article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 28px 20px}article[data-lang],.localized[data-lang]{display:none}article[data-lang="en"],.localized[data-lang="en"]{display:block}h1{font-size:1.9rem;line-height:1.25;margin:0 0 .4em}h2{font-size:1.25rem;margin:1.8em 0 .5em;padding-top:.2em}p,li{color:var(--fg)}ul{padding-left:1.3em}li{margin:.25em 0}.table-wrap{overflow-x:auto;margin:1em 0}table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:520px}th,td{border:1px solid var(--border);padding:9px 11px;text-align:left;vertical-align:top}th{background:var(--bg)}footer{max-width:820px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:.88rem;text-align:center}.hero{text-align:center;padding:36px 20px 12px}.hero h1{font-size:2.3rem;margin-bottom:.2em}.hero p{color:var(--muted);max-width:520px;margin:0 auto}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;text-decoration:none;color:var(--fg);transition:transform .15s,border-color .15s}.card:hover{transform:translateY(-2px);border-color:var(--accent)}.card h2{margin:0 0 .3em;font-size:1.15rem}.card p{margin:0;color:var(--muted);font-size:.93rem}@media(max-width:560px){article{padding:20px 16px 12px;border-radius:12px}h1{font-size:1.55rem}.hero h1{font-size:1.8rem}}
+</style></head>
+<body><header class="top"><a class="brand" href="index.html">Kataloga</a><nav>
+<a href="privacy.html" data-nav="privacy">Privacy Policy</a><a href="terms.html" data-nav="terms">Terms of Use</a>
+<span class="language-switcher" aria-label="Language"><button type="button" data-language="tr" aria-pressed="false">Türkçe</button><button type="button" data-language="en" aria-pressed="false">English</button><button type="button" data-language="es" aria-pressed="false">Español</button></span></nav></header><main><section class="localized" data-lang="tr"><section class="hero"><h1>Kataloga – Yasal Bilgiler</h1><p>Ürün fotoğrafından yapay zeka ile saniyeler içinde ikinci el ilan metni ve fiyat önerisi.</p></section><div class="cards">
+<a class="card" href="privacy.html?lang=tr"><h2>Gizlilik Politikası</h2><p>Hangi verileri işliyoruz, yapay zeka ve reklam hizmetleri, hesabınızı silme hakkınız.</p></a>
+<a class="card" href="terms.html?lang=tr"><h2>Kullanım Koşulları</h2><p>İlan hakları, reklam limitleri, Haftalık Pro kuralları ve kullanıcı sorumlulukları.</p></a>
+</div></section>
+<section class="localized" data-lang="en"><section class="hero"><h1>Kataloga – Legal Information</h1><p>Second-hand listing text and a price suggestion from a product photo in seconds, with AI.</p></section><div class="cards">
+<a class="card" href="privacy.html?lang=en"><h2>Privacy Policy</h2><p>What data we process, AI and advertising services, and your right to delete your account.</p></a>
+<a class="card" href="terms.html?lang=en"><h2>Terms of Use</h2><p>Listing credits, advertising limits, Weekly Pro rules, and user responsibilities.</p></a>
+</div></section>
+<section class="localized" data-lang="es"><section class="hero"><h1>Kataloga – Información legal</h1><p>Texto de anuncio de segunda mano y sugerencia de precio a partir de una foto de producto en segundos, con IA.</p></section><div class="cards">
+<a class="card" href="privacy.html?lang=es"><h2>Política de privacidad</h2><p>Qué datos tratamos, servicios de IA y publicidad, y tu derecho a eliminar tu cuenta.</p></a>
+<a class="card" href="terms.html?lang=es"><h2>Términos de uso</h2><p>Créditos de anuncio, límites publicitarios, reglas de Pro semanal y responsabilidades del usuario.</p></a>
+</div></section></main><footer>© Kataloga · <span data-footer-updated>Last updated: 1 November 2026</span> · <a href="mailto:mustafacihanyilmaz@gmail.com">mustafacihanyilmaz@gmail.com</a></footer>
+<script>
+(function(){
+  var ui = {
+    tr: {privacy: "Gizlilik Politikası", terms: "Kullanım Koşulları", updated: "Son güncelleme: 1 Kasım 2026"},
+    en: {privacy: "Privacy Policy", terms: "Terms of Use", updated: "Last updated: 1 November 2026"},
+    es: {privacy: "Política de privacidad", terms: "Términos de uso", updated: "Última actualización: 1 de noviembre de 2026"}
+  };
+  var supported = ["tr", "en", "es"];
+  var params = new URLSearchParams(window.location.search);
+  var requested = params.get("lang");
+  var language = supported.indexOf(requested) !== -1 ? requested : (navigator.language || "en").slice(0, 2);
+  if (supported.indexOf(language) === -1) language = "en";
+  function setLanguage(next) {
+    language = next;
+    document.documentElement.lang = language;
+    document.querySelectorAll("[data-lang]").forEach(function (element) {
+      element.style.display = element.dataset.lang === language ? "block" : "none";
+    });
+    document.querySelectorAll(".language-switcher button").forEach(function (button) {
+      button.setAttribute("aria-pressed", String(button.dataset.language === language));
+    });
+    document.querySelectorAll("[data-nav]").forEach(function (link) {
+      link.textContent = ui[language][link.dataset.nav];
+      link.href = link.dataset.nav + ".html?lang=" + language;
+    });
+    document.querySelector("[data-footer-updated]").textContent = ui[language].updated;
+    var url = new URL(window.location.href);
+    url.searchParams.set("lang", language);
+    history.replaceState(null, "", url.pathname + url.search + url.hash);
+  }
+  document.querySelectorAll(".language-switcher button").forEach(function (button) {
+    button.addEventListener("click", function () { setLanguage(button.dataset.language); });
+  });
+  setLanguage(language);
+  if (window.location.hash) requestAnimationFrame(function () {
+    var target = document.querySelector('article[data-lang="' + language + '"] ' + window.location.hash);
+    if (target) target.scrollIntoView();
+  });
+}());
+</script>
 </body>
 </html>
